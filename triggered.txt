@@ -19,3 +19,9 @@ gcloud auth activate-service-account --key-file = keys.json
 
 
 5 ENABLE
+
+6 
+appengine.deployer
+appengine.serviceAdmin
+
+
