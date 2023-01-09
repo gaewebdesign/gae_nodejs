@@ -25,3 +25,5 @@ appengine.deployer
 appengine.serviceAdmin
 
 
+7
+version
