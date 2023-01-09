@@ -12,3 +12,7 @@ serviceaccount.com AppEngineDeployer( roles/appengine.deployer)
 service account AppEngine Deployer (it wasnt there before?)
 
 \..
+4
+gcloud iam service-accounts keys create ./keys.json --iam-account nodejsapp-373508@appspot.gserviceaccount.com
+
+gcloud auth activate-service-account --key-file = keys.json
