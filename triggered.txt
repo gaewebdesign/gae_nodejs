@@ -1,3 +1,13 @@
+git commands
+
+to undo commited file (before uploading)
+git log  (take the commit_id for below)
+git show commit_id --name-only
+
+git reset --soft HEAD~1     (move files back to staging area)
+
+
+
 Sample file to start a GAE trigger
 
 service account
