@@ -1,0 +1,42 @@
+
+
+<div>
+    <h1> SCTC Membership (injected from MongoDB) </h1>
+ 
+      <center>
+      <b>{{ title }} </b>
+       </center>
+ 
+       <div class="jumbotron p-3" ng-init="init()">
+         <table class="table table-primary"
+         <thread>
+           <th>Year </th>
+           <th>First Name</th>
+           <th>Last Name</th>
+           <th>NTRP</th>
+         </thread>
+ 
+               <tbody>
+ 
+                   <tr ng-repeat = "m in members">
+                         <td>{{ m.year }} </td>
+                         <td>{{ m.fname}}</td>
+                         <td>{{ m.lname}}</td>
+                         <td>{{ m.ntrp}}</td>
+ 
+                   </tr>
+                   
+                   <tr ng-repeat = "m in sctcdata">
+                         <td>{{m.year }} </td>
+                         <td>{{ m.fname}}</td>
+                         <td>{{ m.lname}}</td>
+                         <td>{{m.gender}}{{ m.ntrp}}</td>
+                   </tr>
+               </tbody>
+ 
+             </table>
+ 
+       </div>
+ 
+ 
+     </div>

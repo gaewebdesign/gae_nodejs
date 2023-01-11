@@ -1,10 +1,24 @@
+
+
+because the files within node_modules should not be uploaded into git, within the node_modules directory 
+place the file '.gitignore' with contents
+
+*
+!.gitignore
+
+(i.e. asterisk * followed by !.gitignore)
+
 git commands
+to upload files into git
+git add .                          (every file that has changed/new except within node_modules which has .gitignore)
+git add file.html                  (a specific file)
+git commit -m "a descriptive term" 
+git push                           (pushes up into git)
 
-to undo commited file (before uploading)
-git log  (take the commit_id for below)
-git show commit_id --name-only
-
-git reset --soft HEAD~1     (move files back to staging area)
+IF a error is made (like forgetting .gitnore in node_modules)
+to undo commits (before uploading)
+do
+git reset            (basiclly starting from scratch, )
 
 
 

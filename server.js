@@ -1,12 +1,16 @@
 const express = require('express');
 
-//const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 
+const sctcRoute = require("./routes/routes.js")
 
 const app = express();
 
 app.use(express.static("./public"))
+app.use( express.json({ limit: '5mb'} ))
+
+app.use("/api/sctc", sctcRoute)
 
 
 /*
