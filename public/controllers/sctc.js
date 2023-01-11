@@ -13,10 +13,10 @@ sctcApp.controller("sctcController", function($scope, $http, $routeParams) {
     $scope.members = []
     $scope.addMembers = () => {
       
-            $scope.members.push({ fname: "Stacia", lname: "Kato", ntrp: "W3.5" })
-            $scope.members.push({ fname: "Wendy", lname: "Murakami", ntrp: "W3.5" })
-            $scope.members.push({ fname: "Karen", lname: "Wu", ntrp: "W4.0" })
-            $scope.members.push({ fname: "Josh", lname: "Johnston", ntrp: "M.5" })
+            $scope.members.push({ fname: "Stacia", lname: "Kato", ntrp: "W3.5", year:"2000" })
+            $scope.members.push({ fname: "Wendy", lname: "Murakami", ntrp: "W3.5", year:"2000" })
+            $scope.members.push({ fname: "Karen", lname: "Wu", ntrp: "W4.0", year:"2000" })
+            $scope.members.push({ fname: "Josh", lname: "Johnston", ntrp: "M.5" , year:"2000"})
             $scope.members.push({ fname: "**** hard-coded", lname: " data ****", ntrp: "* above here " })
         
     }

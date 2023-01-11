@@ -4,15 +4,15 @@ const express = require('express')
 
 const router = express.Router()
 
-//const conn = require("../database.js")
-//const sctcmember = require("../models/sctcmember.js")
+const conn = require("../database.js")
+const sctcmember = require("../models/sctcmember.js")
 
 
 // ENDPOINT:  mongodb 
 router.get("/", (req, res) => {
 
-/*
-  let filter = {}
+
+let filter = {}
   sctcmember.find().exec(function(err, result) {
 
     if (!err) {
@@ -22,7 +22,6 @@ router.get("/", (req, res) => {
     }
 
   })
-*/
 
 
 
